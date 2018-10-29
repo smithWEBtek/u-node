@@ -1,13 +1,10 @@
 console.log('Starting app.js ........');
-console.log('You are at 9:53 of Simplified Input With Yargs ');
-
-
 
 const fs = require('fs');
 const _ = require('lodash')
 const yargs = require('yargs')
 
-const notes = require('./notes.js')
+const notes = require('./notes2.js')
 
 const argv = yargs.argv;
 // .argv is where yargs library stores its version of process.argv
@@ -20,12 +17,8 @@ console.log('Yargs', argv);
 
 
 if (command === 'add') {
-	let note = notes.addNote(argv.title, argv.body)
-	fs.appendFileSync('notesList.txt', `${note.title}: ${note.body}, \n`, function (err) {
-		if (err) {
-			console.log('Unable to write to file');
-		}
-	});
+	console.log('Adding new note...');
+	notes.addNote(argv.title, argv.body)
 } else if (command === 'list') {
 	console.log('Listing all notes ...');
 } else if (command === 'read') {

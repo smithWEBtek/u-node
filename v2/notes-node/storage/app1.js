@@ -2,7 +2,7 @@ console.log('starting app.js ........');
 
 const fs = require('fs');
 const os = require('os');
-const notes = require('./notes.js');
+const notes = require('./notes2.js');
 const _ = require('lodash');
 
 console.log('true or false? ', _.isString('abc'));
