@@ -2,9 +2,9 @@
 //   return "Your notes ..."
 // }
 
-// const getNotes = function(){
-//   return "Your notes ..."
-// }
+const getNotes = function () {
+  return "Your notes ..."
+}
 
 const getNotes = () => {
   return "Your notes ..."
