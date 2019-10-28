@@ -1,1 +1,0 @@
-Hello, my username is:  BRAD you are age: 25.Today is: Sun Oct 28 2018 15:34:55 GMT-0400 (Eastern Daylight Time).
